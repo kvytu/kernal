@@ -34,7 +34,7 @@ func (app *App) loadConfig(appcfg interface{}) (err error) {
 	}
 
 	// Write sample config
-	// raw, err := yaml.Marshal(app.config)
+	raw, err := yaml.Marshal(app.config)
 
 	// Read config
 	raw, err = os.ReadFile(cfgPath)
